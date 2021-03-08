@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OfPost.App">
+    <Application.Resources>
+    <ResourceDictionary>
+    <OnPlatform x:TypeArguments="x:String" x:Key="LightFont">
+        <On Platform="Android" Value="Recursive-Light.ttf#Recursive Light" />
+        <On Platform="iOS" Value="Recursive-Light" />
+    </OnPlatform>
+    <OnPlatform x:TypeArguments="x:String" x:Key="BoldFont">
+        <On Platform="Android" Value="Recursive-Regular.ttf#Recursive Regular" />
+        <On Platform="iOS" Value="Recursive-Regular" />
+    </OnPlatform>
+    </ResourceDictionary>
+    </Application.Resources>
+</Application>

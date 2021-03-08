@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:OfPost.Renderer"
+    x:Class="OfPost.View.MainPage"
+    NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>   
+        <StackLayout Margin="20,20,20,0">
+            <!--#region-->
+            <Label Margin="0,50,0,0" Text="Hello. &#10;Welcome back!"
+                   HorizontalOptions="StartAndExpand"
+                   FontFamily="{StaticResource BoldFont}"
+                   FontSize="35"/>
+
+            <!--Username data-->
+            <Label Margin="0,150,0,0" Text="Username"
+                   FontFamily="{StaticResource LightFont}"/>
+            <local:LineEntry Placeholder="example@gmail.com"
+                             Margin="0,20,0,0" Keyboard="Email"/>
+
+            <!--Password data-->
+            <Label Margin="0,30,0,0" Text="Password"
+                   FontFamily="{StaticResource LightFont}"/>
+            <local:LineEntry Placeholder="*******"
+                             Margin="0,20,0,0" IsPassword="True"/>
+
+            <Button Text="Forgot password?" TextColor="Gray"
+                    FontFamily="{StaticResource LightFont}"
+                    HorizontalOptions="EndAndExpand"
+                    BackgroundColor="Transparent"/>
+
+            <!--Sign In method-->
+            <Button BackgroundColor="#004369" Text="Login"
+                    TextColor="White"
+                    FontFamily="{StaticResource BoldFont}"
+                    FontSize="20"
+                    Margin="0,50,0,0"
+                    Clicked="SignIn"></Button>
+
+            <!--Sign Up method-->
+            <Button Text="Creat Account" TextColor="Gray"
+                    FontFamily="{StaticResource LightFont}"
+                    HorizontalOptions="CenterAndExpand"
+                    BackgroundColor="Transparent" FontSize="18"
+                    Margin="0,20,0,0"/>
+            <!--#endregion-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
