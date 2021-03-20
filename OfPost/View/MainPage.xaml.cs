@@ -15,7 +15,7 @@ namespace OfPost.View
         void SignIn(object sender, EventArgs args)
         {
             //Navigation to next page
-            Navigation.PushAsync(new HomePage());
+            Navigation.PushAsync(new TabPage());
         }
     }
 }

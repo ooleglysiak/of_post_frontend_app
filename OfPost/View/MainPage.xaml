@@ -5,7 +5,8 @@
     xmlns:local="clr-namespace:OfPost.Renderer"
     x:Class="OfPost.View.MainPage"
     NavigationPage.HasNavigationBar="False">
-    <ContentPage.Content>   
+    <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="20,20,20,0">
             <!--#region-->
             <Label Margin="0,50,0,0" Text="Hello. &#10;Welcome back!"
@@ -46,5 +47,6 @@
                     Margin="0,20,0,0"/>
             <!--#endregion-->
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
