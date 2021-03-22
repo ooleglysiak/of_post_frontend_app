@@ -90,6 +90,8 @@ This project uses some third-party assets with a license that requires attributi
 - [Settings](https://github.com/jamesmontemagno/SettingsPlugin) : by James Montemagno
 - [Sharpnado.Tabs 2.0](https://github.com/roubachof/Sharpnado.Tabs) : by roubachof 
 - [EntityFramework](https://www.nuget.org/packages/EntityFramework/): by Microsoft's
+- [Microcharts](https://www.nuget.org/packages/Microcharts/): by eman1986
+- [Xamarin.Plugin.Calendar](https://www.nuget.org/packages/Xamarin.Plugin.Calendar/): by lilcodelab
 
 # Recommended links
 [Getting Started with Xamarin.Forms](https://docs.microsoft.com/uk-ua/xamarin/get-started/)
