@@ -10,6 +10,7 @@ namespace OfPost.View
         public StatsPage()
         {
             InitializeComponent();
+            BindingContext = new ViewModel.UserStatsViewModel();
         }
     }
 }

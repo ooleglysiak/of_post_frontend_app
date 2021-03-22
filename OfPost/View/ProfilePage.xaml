@@ -4,8 +4,67 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="OfPost.View.ProfilePage">
     <ContentPage.Content>
-        <StackLayout>
+        <ScrollView>
+        <StackLayout Margin="20,40,20,0">
+            <!--#region-->
+            <Frame HeightRequest="100" WidthRequest="100"
+                   CornerRadius="50"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Start"
+                   Margin="0" Padding="0"
+                   BackgroundColor="LightGray"
+                   HasShadow="False">
+                <Label Text="?" TextColor="White"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center" />
+            </Frame>
+            <!--#endregion-->
+            <Label Text="Oleg Lysiak" FontSize="20"
+             TextColor="Black" HorizontalOptions="CenterAndExpand"
+             FontFamily="{StaticResource BoldFont}"/>
+            <!--#region-->
+            <StackLayout Orientation="Horizontal"
+            HorizontalOptions="CenterAndExpand"
+            Margin="0,20,0,0">
 
+                <!--Views-->
+                <StackLayout Orientation="Vertical"
+                HorizontalOptions="StartAndExpand"
+                Margin="20,0,20,0">
+                    <Label Text="Views"
+                    FontFamily="{StaticResource BoldFont}"/>
+                    <Label Text="431k"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="{StaticResource BoldFont}"/>
+                </StackLayout>
+
+                <!--Subs-->
+                <StackLayout Orientation="Vertical"
+                HorizontalOptions="CenterAndExpand"
+                Margin="20,0,20,0">
+                    <Label Text="Subs"
+                    FontFamily="{StaticResource BoldFont}"/>
+                    <Label Text="12k"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="{StaticResource BoldFont}"/>
+                </StackLayout>
+
+                <!--Likes-->
+                <StackLayout Orientation="Vertical"
+                HorizontalOptions="EndAndExpand"
+                Margin="20,0,20,0">
+                    <Label Text="Likes"
+                    FontFamily="{StaticResource BoldFont}"/>
+                    <Label Text="323k"
+                    HorizontalTextAlignment="Center"
+                    FontFamily="{StaticResource BoldFont}"/>
+                </StackLayout>
+
+            </StackLayout>
+            <!--#endregion-->
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

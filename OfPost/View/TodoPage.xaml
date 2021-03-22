@@ -2,10 +2,43 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Xamarin.Plugin.Calendar.Controls;assembly=Xamarin.Plugin.Calendar"
     x:Class="OfPost.View.TodoPage">
     <ContentPage.Content>
-        <StackLayout>
-
-        </StackLayout>
+        <ScrollView>
+            <StackLayout Margin="20,20,20,0">
+                <!--#region-->
+                <controls:Calendar
+                Margin="40,0,40,0" Month="3" Year="2021"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                ShowMonthPicker="False"
+                ShowYearPicker="False"
+                FooterSectionVisible="False"/>
+                <!--#region-->
+                <StackLayout>
+                    <!--Stucture-->
+                    <Frame Background="LightGray" HasShadow="False"
+                     HeightRequest="300">
+                    <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="White" CornerRadius="20"
+                     VerticalOptions="EndAndExpand" HasShadow="False"
+                     HeightRequest="15" HorizontalOptions="StartAndExpand">
+                        <Button Text="See description" FontFamily="{StaticResource LightFont}"
+                         TextColor="Black"/>        
+                    </Frame>
+                    <!--Post now-->
+                    <Frame BackgroundColor="#004369" CornerRadius="20"
+                    VerticalOptions="EndAndExpand" HasShadow="False"
+                    HeightRequest="15" HorizontalOptions="EndAndExpand">
+                        <Button Text="Post now" FontFamily="{StaticResource BoldFont}"
+                         TextColor="White"/>
+                    </Frame>
+                    </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <!--#endregion-->
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
